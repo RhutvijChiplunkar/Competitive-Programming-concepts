@@ -112,7 +112,14 @@ void no_of_bits_to_convert_numbers(){
 	cout<<"The number of bits to change are::"<<count<<endl;
 }
 
-
+//inverting a 32 bit integer
+void Invert_num(){
+	int n;
+	cout<<"Enter number::";
+	cin>>n;
+	unsigned int x=~n;
+	cout<<"Inverted number is::"<<x<<endl;
+}
 int main()
 {
 	cout<<"-------Find Bit-------"<<endl;
@@ -125,6 +132,8 @@ int main()
 	no_of_bits_to_convert_numbers();
 	cout<<"------Find number of 1's in a number--------"<<endl;
 	count_1();
+	cout<<"------Inverting a number--------"<<endl;
+	Invert_num();
 	cout<<"------------------------------"<<endl;
 }
 
@@ -148,6 +157,8 @@ The number of bits to change are::4
 ------Find number of 1's in a number--------
 Enter number::1268
 The number of 1's are::6
+------Inverting a number--------
+Enter number::165294856
+Inverted number is::4129672439
 ------------------------------
 */
- */
